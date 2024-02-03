@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pavan Portfolio</title>
+    
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="main.js">        </script>
+
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    
+</head>
+
+<body>
+    <header class="header">
+        <a href="logo.png" >
+            <img src="logo.png" id="logo">
+        </a>
+        <i class='bx bx-menu' id="menu"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </header>
+
+    <section id="home">
+        <div id="hcontent">
+            <div id="">
+                <div id="text">
+                    <h4>Hello, It's Me</h4>
+                    <h2>Penumuru Pavan Kumar</h2>
+                    <h4>And I'm a  <span>Fullstack Developer</span></h4><br>
+                </div>
+                    
+                        
+                <div id="socialmedia">
+                    <a href="https://www.facebook.com/profile.php?id=100010827100375"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.instagram.com/broken_heart_0604/"><i class='bx bxl-instagram-alt'></i></a>
+                    <a href="https://www.linkedin.com/in/penumuru-pavan-kumar-bb1b00147"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/Pavankumar0604"><i class='bx bxl-github'></i></a><br>
+                            
+                </div><br>
+                <div id="resume">
+                    <a href="resume.pdf" target="_blank" class="btn">Resume</a>
+                </div>
+            </div>
+          
+                <div class="images">
+                    <img src="shape1.png" class="shape">
+                    <img src="image.png" class="boy">
+                    
+                </div>
+        </div>
+
+    </section>
+
+    <section id="about">
+        <h1 class="heading">About Me</h1><br><br>
+        
+        <div class="aboutme">
+            <div class="aimage">
+                <img src="boy.jpg" id="pp">
+            </div> <br>
+    
+            <div class="acontent">
+               
+                <h3>Fullstack Developer</h3>
+                <p>Self-motivated, highly passionate, and hardworking fresher looking for
+                    an opportunity to work in a challenging organization to utilize my skills
+                    and knowledge to work for the growth of the organisation.</p><br>
+                
+                <h3 class="skills"> Skills</h3><br>
+                <a href="#html"><i class='bx bxl-html5'></i></a>
+                <a href="#css"><i class='bx bxl-css3'></i></a>
+                <a href="#javascript"><i class='bx bxl-javascript'></i></a>
+                <a href="#reactjs"><i class='bx bxl-react'></i></a>
+                <a href="#python"><i class='bx bxl-python'></i></a>
+                <a href="#django"><i class='bx bxl-django'></i></a>
+                
+            </div>
+        </div>
+
+    </section>
+
+    <section id="education">
+        <h1 class="heading1">My Educational Qualifications</h1>
+        <br><br>
+        <div class="container">
+            <div class="box">
+                <h3>SECONDARY SCHOOL</h3>
+                <h4>Githam High School</h4>
+                <p>2016 - 2017</p>
+                <h3>CGPA : 9.3/10</h3>
+            </div>
+        </div><BR></BR>
+
+        <div class="container">
+            <div class="box">
+                <h3>HIGHER SECONDARY SCHOOL</h3>
+                <h4>Sri Chaithanya JR college</h4>
+                <p>2017 - 2019</p>
+                <h3>CGPA : 9.3/10</h3>
+            </div>
+        </div> <br>
+        <div class="container">
+            <div class="box">
+                <h3>BACHELOR OF ENGINEERING </h3>
+                <h4>Kingston Engineering College</h4>
+                <p>2019 - 20123</p>
+                <h3>CGPA : 8.5/10</h3>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="projects">
+        <h1 class="heading1">My Projects</h1>
+        <br><br>
+        <div class="container1">
+            <div class="box1">
+                <img src="image1.jpg" id="image1" >
+                <div >
+                    <h4>DATA ANALYTIC IBM</h4> <br>
+                    <p>Created visualizations and dashboards to effectively communicate findings and recommendations to stakeholders. Led a global sales data analytics project where I analyzed large sets of data using tools such as Excel, SQL, and Tableau to identify trends and insights.</p>
+                </div>
+            </div>
+
+            <div class="box1">
+                <img src="image2.jpg" id="image2" >
+                <div >
+                    <h4>ONLINE VOTING SYSTEM USING BLOCKCHAIN</h4> <br>
+                    <p>Online voting is a web-based voting system that will help you manage your elections easily and securely. In this system, the voter does not have to go to the polling booth to cast their vote. It is very useful for physically disabled persons and senior citizens.</p>
+                </div>
+            </div>
+
+            <div class="box1">
+                <img src="image3.jpg" id="image3" >
+                <div >
+                    <h4>ONLINE MEDICARE SYSTEM USING DJNGO</h4> <br>
+                    <p>This Online Healthcare System project is a web application developed using Python and SQLite database with Django Framework 2.1.5. The students can get online prescriptions from various doctors, request an ambulance in emergencies, and get information about the mdicines available in the Medical Pharmacy Shop.</p>
+                </div>
+            </div> 
+
+        </div>
+    </section>
+
+
+    <section id="contact">
+        <h1 id="heading2">Contact <span>Me!</span></h1>
+        <br><br>
+
+        <form action=""> 
+            <div class="inputbox">
+                <input type="text" placeholder="Full Name" id="name" required>
+                <input type="email" placeholder="Email Address" id="email" required>
+            </div>
+
+            <div class="inputbox">
+                <input type="number" placeholder="Mobile Number" id="number" required>
+            </div>
+            <textarea  id="message"  rows="8" placeholder="Your Message" required></textarea>
+            <!-- <input type="submit" value="Send Message" class="btn"> -->
+            <button class="btn" onclick="sendEmail()">Send Message</button>
+        </form>
+
+    </section>
+
+    <footer id="footer">
+        <div class="footertext">
+            <p>Copyright &copy; 2024 by Pavankumar | All Rights Reserved</p>
+        </div>
+
+        <div class="footericon">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+
+    
+</body>
+</html>
