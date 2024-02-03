@@ -1,1 +1,1 @@
-Personal Portfolio(HTML, CSS and JAVASCRIPT)
+Personal Portfolio (HTML, CSS and JAVASCRIPT)
