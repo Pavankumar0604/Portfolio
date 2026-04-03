@@ -1,5 +1,4 @@
 import { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
 
 import TitleHeader from "../components/TitleHeader";
 import ContactExperience from "../components/models/contact/ContactExperience";
@@ -20,22 +19,36 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setLoading(true); // Show loading state
+    setLoading(true);
+
+    const formData = {
+      ...form,
+      access_key: import.meta.env.VITE_WEB3FORMS_ACCESS_KEY,
+    };
 
     try {
-      await emailjs.sendForm(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-        formRef.current,
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-      );
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
-      // Reset form and stop loading
-      setForm({ name: "", email: "", message: "" });
+      const result = await response.json();
+
+      if (result.success) {
+        alert("Success! Your message has been sent. 🚀");
+        setForm({ name: "", email: "", message: "" });
+      } else {
+        alert("Something went wrong. Please try again later. ❌");
+      }
     } catch (error) {
-      console.error("EmailJS Error:", error); // Optional: show toast
+      console.error("Web3Forms Error:", error);
+      alert("Error sending message. Please check your internet connection. ❌");
     } finally {
-      setLoading(false); // Always stop loading, even on error
+      setLoading(false);
     }
   };
 
@@ -43,12 +56,12 @@ const Contact = () => {
     <section id="contact" className="flex-center section-padding">
       <div className="w-full h-full md:px-10 px-5">
         <TitleHeader
-          title="Get in Touch – Let’s Connect"
-          sub="💬 Have questions or ideas? Let’s talk! 🚀"
+          title="Let’s Build Something Great"
+          sub="💬 Ready to collaborate on your next web or mobile app? Let’s talk! 🚀"
         />
-        <div className="grid-12-cols mt-16">
+        <div className="grid-12-cols mt-10 md:mt-16">
           <div className="xl:col-span-5">
-            <div className="flex-center card-border rounded-xl p-10">
+            <div className="flex-center card-border rounded-xl p-5 sm:p-8 md:p-10">
               <form
                 ref={formRef}
                 onSubmit={handleSubmit}
@@ -107,8 +120,8 @@ const Contact = () => {
               </form>
             </div>
           </div>
-          <div className="xl:col-span-7 min-h-96">
-            <div className="bg-[#cd7c2e] w-full h-full hover:cursor-grab rounded-3xl overflow-hidden">
+          <div className="xl:col-span-7 min-h-64 md:min-h-96">
+            <div className="bg-black-200 w-full h-full hover:cursor-grab rounded-3xl overflow-hidden border border-black-50">
               <ContactExperience />
             </div>
           </div>

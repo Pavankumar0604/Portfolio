@@ -20,13 +20,14 @@ const TechIconCardExperience = ({ model }) => {
 
   return (
     <Canvas>
-      <ambientLight intensity={0.3} />
-      <directionalLight position={[5, 5, 5]} intensity={1} />
+      <ambientLight intensity={0.8} color="#fffbeb" />
+      <directionalLight position={[5, 10, 5]} intensity={2.5} color="#fffbeb" />
       <spotLight
         position={[10, 15, 10]}
-        angle={0.3}
+        angle={0.4}
         penumbra={1}
-        intensity={2}
+        intensity={5}
+        color="#fef3c7"
       />
       <Environment preset="city" />
 

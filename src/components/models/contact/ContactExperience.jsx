@@ -6,15 +6,15 @@ import Computer from "./Computer";
 const ContactExperience = () => {
   return (
     <Canvas shadows camera={{ position: [0, 3, 7], fov: 45 }}>
-      <ambientLight intensity={0.5} color="#fff4e6" />
+      <ambientLight intensity={0.8} color="#fffbeb" />
 
-      <directionalLight position={[5, 5, 3]} intensity={2.5} color="#ffd9b3" />
+      <directionalLight position={[5, 5, 3]} intensity={2} color="#fffbeb" />
 
       <directionalLight
         position={[5, 9, 1]}
         castShadow
-        intensity={2.5}
-        color="#ffd9b3"
+        intensity={1.5}
+        color="#fef3c7"
       />
 
       <OrbitControls
@@ -30,7 +30,7 @@ const ContactExperience = () => {
           rotation={[-Math.PI / 2, 0, 0]}
         >
           <planeGeometry args={[30, 30]} />
-          <meshStandardMaterial color="#a46b2d" />
+          <meshStandardMaterial color="#f5f5dc" />
         </mesh>
       </group>
 

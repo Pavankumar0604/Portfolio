@@ -1,7 +1,11 @@
 const navLinks = [
   {
-    name: "Work",
-    link: "#work",
+    name: "About",
+    link: "#about",
+  },
+  {
+    name: "Projects",
+    link: "#projects",
   },
   {
     name: "Experience",
@@ -11,134 +15,98 @@ const navLinks = [
     name: "Skills",
     link: "#skills",
   },
-  {
-    name: "Testimonials",
-    link: "#testimonials",
-  },
 ];
 
 const words = [
-  { text: "Ideas", imgPath: "/images/ideas.svg" },
-  { text: "Concepts", imgPath: "/images/concepts.svg" },
-  { text: "Designs", imgPath: "/images/designs.svg" },
-  { text: "Code", imgPath: "/images/code.svg" },
-  { text: "Ideas", imgPath: "/images/ideas.svg" },
-  { text: "Concepts", imgPath: "/images/concepts.svg" },
-  { text: "Designs", imgPath: "/images/designs.svg" },
-  { text: "Code", imgPath: "/images/code.svg" },
+  { text: "Software Engineer", imgPath: "/images/code.svg" },
+  { text: "Product-Driven", imgPath: "/images/ideas.svg" },
+  { text: "Web & Mobile", imgPath: "/images/designs.svg" },
+  { text: "Cross-Platform", imgPath: "/images/concepts.svg" },
+  { text: "Mobility Tech", imgPath: "/images/designs.svg" },
+  { text: "Python & Django", imgPath: "/images/code.svg" },
+  { text: "Flutter & React", imgPath: "/images/code.svg" },
+  { text: "Full-Stack Setup", imgPath: "/images/ideas.svg" },
 ];
 
 const counterItems = [
-  { value: 15, suffix: "+", label: "Years of Experience" },
-  { value: 200, suffix: "+", label: "Satisfied Clients" },
-  { value: 108, suffix: "+", label: "Completed Projects" },
-  { value: 90, suffix: "%", label: "Client Retention Rate" },
+  { value: 99, suffix: "%", label: "System Reliability" },
+  { value: 15, suffix: "%", label: "Conversion Lift" },
+  { value: 30, suffix: "%", label: "Speed Optimization" },
+  { value: 100, suffix: "%", label: "Client Success" },
 ];
 
 const logoIconsList = [
-  {
-    imgPath: "/images/logos/company-logo-1.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-2.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-3.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-4.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-5.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-6.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-7.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-8.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-9.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-10.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-11.png",
-  },
+  { imgPath: "/images/logos/logo.png", name: "Mindmesh" },
+  { imgPath: "/images/ienergizer.png", name: "IEnergizer" },
+  { imgPath: "/images/logos/react.png", name: "React" },
+  { imgPath: "/images/logos/python.svg", name: "Python" },
+  { imgPath: "/images/logos/git.svg", name: "Git" },
+  { imgPath: "/images/logos/node.png", name: "Node.js" },
+  { imgPath: "/images/logos/three.png", name: "Three.js" },
 ];
 
 const abilities = [
   {
-    imgPath: "/images/seo.png",
-    title: "Quality Focus",
-    desc: "Delivering high-quality results while maintaining attention to every detail.",
+    imgPath: "/images/concepts.svg",
+    title: "End-to-End Development",
+    desc: "Architecting and deploying production-ready ecosystems for web and mobile.",
   },
   {
-    imgPath: "/images/chat.png",
-    title: "Reliable Communication",
-    desc: "Keeping you updated at every step to ensure transparency and clarity.",
+    imgPath: "/images/code.svg",
+    title: "Cross-Platform Mastery",
+    desc: "Building unified Android/iOS experiences with high-performance frameworks.",
   },
   {
-    imgPath: "/images/time.png",
-    title: "On-Time Delivery",
-    desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
+    imgPath: "/images/designs.svg",
+    title: "UI/UX & Client Strategy",
+    desc: "Focusing on intuitive designs that scale gracefully with business growth.",
   },
 ];
 
 const techStackImgs = [
-  {
-    name: "React Developer",
-    imgPath: "/images/logos/react.png",
-  },
-  {
-    name: "Python Developer",
-    imgPath: "/images/logos/python.svg",
-  },
-  {
-    name: "Backend Developer",
-    imgPath: "/images/logos/node.png",
-  },
-  {
-    name: "Interactive Developer",
-    imgPath: "/images/logos/three.png",
-  },
-  {
-    name: "Project Manager",
-    imgPath: "/images/logos/git.svg",
-  },
+  { name: "ReactJS", imgPath: "/images/logos/react.png" },
+  { name: "Node.js", imgPath: "/images/logos/node.png" },
+  { name: "Python", imgPath: "/images/logos/python.svg" },
+  { name: "Git", imgPath: "/images/logos/git.svg" },
+  { name: "Three.js", imgPath: "/images/logos/three.png" },
+  { name: "JavaScript", imgPath: "/images/logos/javascript.png" },
+  { name: "TailwindCSS", imgPath: "/images/logos/tailwindcss.png" },
+  { name: "Flutter", imgPath: "/images/logos/flutter.png" },
+  { name: "Supabase", imgPath: "/images/logos/supabase.png" },
+  { name: "PostgreSQL", imgPath: "/images/logos/sql.png" },
+  { name: "Figma", imgPath: "/images/logos/figma.png" },
+  { name: "VS Code", imgPath: "/images/logos/vscode.png" },
+  { name: "HTML", imgPath: "/images/logos/html.png" },
+  { name: "CSS", imgPath: "/images/logos/css.png" },
 ];
 
 const techStackIcons = [
   {
-    name: "React Developer",
+    name: "ReactJS",
     modelPath: "/models/react_logo-transformed.glb",
-    scale: 1,
+    scale: 0.5,
     rotation: [0, 0, 0],
   },
   {
-    name: "Python Developer",
+    name: "Node.js",
+    modelPath: "/models/node-transformed.glb",
+    scale: 3,
+    rotation: [0, -Math.PI / 2, 0],
+  },
+  {
+    name: "Python",
     modelPath: "/models/python-transformed.glb",
     scale: 0.8,
     rotation: [0, 0, 0],
   },
   {
-    name: "Backend Developer",
-    modelPath: "/models/node-transformed.glb",
-    scale: 5,
-    rotation: [0, -Math.PI / 2, 0],
-  },
-  {
-    name: "Interactive Developer",
+    name: "Three.js",
     modelPath: "/models/three.js-transformed.glb",
     scale: 0.05,
     rotation: [0, 0, 0],
   },
   {
-    name: "Project Manager",
+    name: "Git",
     modelPath: "/models/git-svg-transformed.glb",
     scale: 0.05,
     rotation: [0, -Math.PI / 4, 0],
@@ -147,120 +115,160 @@ const techStackIcons = [
 
 const expCards = [
   {
-    review: "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
-    imgPath: "/images/exp1.png",
-    logoPath: "/images/logo1.png",
-    title: "Frontend Developer",
-    date: "January 2023 - Present",
+    review: "Driving end-to-end development of production-scale mobility ecosystems and engineering robust backend systems.",
+    imgPath: "/images/logos/logo.png",
+    logoPath: "/images/logos/logo.png",
+    title: "Software Engineer",
+    date: "Oct 2024 - Present",
     responsibilities: [
-      "Developed and maintained user-facing features for the Hostinger website.",
-      "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-      "Optimized web applications for maximum speed and scalability.",
+      "Mindmesh Solutions Private Limited – Bangalore.",
+      "Spearheading development of roadrobos.com, integrating full-stack components.",
+      "Optimizing cross-platform Flutter applications for high-concurrency rental traffic.",
+      "Implementing and testing Django/Python services to ensure clean code standards.",
+      "Ensuring responsive, bug-free web architectures for business-critical features."
     ],
   },
   {
-    review: "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
-    imgPath: "/images/exp2.png",
-    logoPath: "/images/logo2.png",
-    title: "Full Stack Developer",
-    date: "June 2020 - December 2023",
+    review: "Provided rigorous customer support, ensuring 100% resolution accuracy while adapting to high-volume user needs.",
+    imgPath: "/images/ienergizer.png",
+    logoPath: "/images/ienergizer.png",
+    title: "Customer Support Executive",
+    date: "Oct 2023 - Sep 2024",
     responsibilities: [
-      "Led the development of Docker's web applications, focusing on scalability.",
-      "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Contributed to open-source projects that were used with the Docker ecosystem.",
-    ],
-  },
-  {
-    review: "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
-    imgPath: "/images/exp3.png",
-    logoPath: "/images/logo3.png",
-    title: "React Native Developer",
-    date: "March 2019 - May 2020",
-    responsibilities: [
-      "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-      "Improved app performance and user experience through code optimization and testing.",
-      "Coordinated with the product team to implement features based on feedback.",
+      "iEnergizer – Greater Noida.",
+      "Managed client interactions and ensured premier technical routing and support.",
+      "Fostered deep problem-solving capabilities in high-stakes ticket resolution.",
+      "Delivered empathetic, efficient communication across diverse user groups.",
+      "Maintained rapid response quotas while sustaining top-tier quality scores."
     ],
   },
 ];
 
 const expLogos = [
   {
-    name: "logo1",
-    imgPath: "/images/logo1.png",
+    name: "Mindmesh",
+    imgPath: "/images/logos/logo.png",
   },
   {
-    name: "logo2",
-    imgPath: "/images/logo2.png",
-  },
-  {
-    name: "logo3",
-    imgPath: "/images/logo3.png",
+    name: "IEnergizer",
+    imgPath: "/images/ienergizer.png",
   },
 ];
 
 const testimonials = [
   {
-    name: "Esther Howard",
-    mentions: "@estherhoward",
+    name: "Pavan Kumar",
+    mentions: "@pavankumar0604",
     review:
-      "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
-    imgPath: "/images/client1.png",
-  },
-  {
-    name: "Wade Warren",
-    mentions: "@wadewarren",
-    review:
-      "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
-    imgPath: "/images/client3.png",
-  },
-  {
-    name: "Guy Hawkins",
-    mentions: "@guyhawkins",
-    review:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    imgPath: "/images/client2.png",
-  },
-  {
-    name: "Marvin McKinney",
-    mentions: "@marvinmckinney",
-    review:
-      "Adrian was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
-    imgPath: "/images/client5.png",
-  },
-  {
-    name: "Floyd Miles",
-    mentions: "@floydmiles",
-    review:
-      "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!",
-    imgPath: "/images/client4.png",
-  },
-  {
-    name: "Albert Flores",
-    mentions: "@albertflores",
-    review:
-      "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
-    imgPath: "/images/client6.png",
+      "Software Engineer building production-grade products. Expert in translating complex mobility requirements into seamless digital experiences.",
+    imgPath: "/images/person.png",
   },
 ];
 
 const socialImgs = [
   {
-    name: "insta",
-    imgPath: "/images/insta.png",
-  },
-  {
-    name: "fb",
-    imgPath: "/images/fb.png",
-  },
-  {
-    name: "x",
-    imgPath: "/images/x.png",
+    name: "github",
+    imgPath: "/images/github.png",
+    link: "https://github.com/Pavankumar0604",
   },
   {
     name: "linkedin",
     imgPath: "/images/linkedin.png",
+    link: "https://www.linkedin.com/in/penumuru-pavan-kumar-bb1b00147/",
   },
+];
+
+const projects = [
+  {
+    title: "RoadRobos – Mobility Web Application",
+    category: "Featured Client Projects",
+    type: "Professional Project",
+    shortTagline: "Production-scale bike rental & taxi ecosystem.",
+    description: [
+      "Engineered a large-scale mobility platform (roadrobos.com) managing end-to-end booking and automated rental workflows.",
+      "Ensured a highly responsive web infrastructure with robust backend integration for real-time tracking."
+    ],
+    techStack: ["React", "Python", "Django", "Tailwind CSS"],
+    repoLink: "https://github.com/Pavankumar0604",
+    liveLink: "https://roadrobos.com",
+    imgPath: "/images/projects/roadrobos_web.png",
+    featured: true
+  },
+  {
+    title: "RoadRobos – Android & iOS Apps",
+    category: "Featured Client Projects",
+    type: "Professional Project",
+    shortTagline: "Unified mobile experience for vehicle rentals.",
+    description: [
+      "Developed high-performance cross-platform mobile apps using Flutter to synchronize live fleet data.",
+      "Implemented streamlined user interfaces specifically tailored for rapid mobile booking and navigation."
+    ],
+    techStack: ["Flutter", "Dart", "REST APIs", "Firebase"],
+    repoLink: "https://github.com/Pavankumar0604",
+    liveLink: "#",
+    imgPath: "/images/project1.png",
+    featured: true
+  },
+  {
+    title: "Payment Gateway Integration",
+    category: "Professional Projects",
+    type: "Software Engineer",
+    shortTagline: "Secure, high-efficiency transactional pipelines.",
+    description: [
+      "Designed and deployed compliant, high-security payment integrations (e.g., Razorpay) for commercial ecosystems.",
+      "Optimized checkout flows to reduce latency and successfully prevent drop-offs during transactions."
+    ],
+    techStack: ["Python", "Django", "JavaScript", "REST APIs"],
+    repoLink: "https://github.com/Pavankumar0604",
+    liveLink: "#",
+    imgPath: "/images/projects/image1.jpg",
+    featured: true
+  },
+  {
+    title: "Online Medicare System",
+    category: "Academic Projects",
+    type: "Healthcare",
+    shortTagline: "Django-based platform for healthcare management.",
+    description: [
+      "Developed a Django-powered medical portal enabling rapid doctor discovery and seamless appointment scheduling.",
+      "Engineered a custom healthcare backend using Python and SQLite for secure patient history management."
+    ],
+    techStack: ["Django", "Python", "SQLite", "Bootstrap"],
+    repoLink: "https://github.com/Pavankumar0604",
+    liveLink: "#",
+    imgPath: "/images/projects/image3.jpg",
+    featured: false
+  },
+  {
+    title: "Decentralized Voting System",
+    category: "Academic Projects",
+    type: "Blockchain",
+    shortTagline: "Secure, transparent voting using blockchain logic.",
+    description: [
+      "Built a secure validation platform concept designed to guarantee tamper-proof environments and verifiable results.",
+      "Showcased strict data integrity models and advanced testing flows to ensure absolute process transparency."
+    ],
+    techStack: ["Python", "Django", "JavaScript", "Responsive UI"],
+    repoLink: "https://github.com/Pavankumar0604",
+    liveLink: "#",
+    imgPath: "/images/projects/image2.jpg",
+    featured: false
+  },
+  {
+    title: "Personal Portfolio Website",
+    category: "Personal Projects",
+    type: "Frontend Engineering",
+    shortTagline: "Interactive 3D web experience showcasing professional work.",
+    description: [
+      "Designed an immersive, high-performance portfolio incorporating immersive 3D graphics and clean React architecture.",
+      "Prioritized responsive design, polished animations, and recruiter-focused content delivery."
+    ],
+    techStack: ["ReactJS", "Tailwind CSS", "Three.js", "GSAP"],
+    repoLink: "https://github.com/Pavankumar0604",
+    liveLink: "#",
+    imgPath: "/images/projects/image4.png",
+    featured: false
+  }
 ];
 
 export {
@@ -275,4 +283,5 @@ export {
   techStackIcons,
   techStackImgs,
   navLinks,
+  projects,
 };

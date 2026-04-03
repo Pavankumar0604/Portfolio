@@ -92,58 +92,51 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="flex-center md:mt-40 mt-20 section-padding xl:px-0"
+      className="flex-center md:mt-40 mt-14 sm:mt-20 section-padding xl:px-0 bg-cosmic-bg"
     >
       <div className="w-full h-full md:px-20 px-5">
         <TitleHeader
-          title="Professional Work Experience"
-          sub="💼 My Career Overview"
+          title="Work Experience"
+          sub="💼 My Professional Journey"
         />
-        <div className="mt-32 relative">
-          <div className="relative z-50 xl:space-y-32 space-y-10">
-            {expCards.map((card) => (
-              <div key={card.title} className="exp-card-wrapper">
-                <div className="xl:w-2/6">
-                  <GlowCard card={card}>
-                    <div>
-                      <img src={card.imgPath} alt="exp-img" />
-                    </div>
-                  </GlowCard>
+        <div className="mt-12 flex flex-col gap-8 relative z-50">
+          {expCards.map((card) => (
+            <div 
+              key={card.title} 
+              className="exp-card-wrapper flex flex-col xl:flex-row gap-6 items-center bg-white/40 p-5 md:p-6 rounded-2xl border border-black-50 backdrop-blur-xl hover:border-neon-blue/50 transition-all shadow-xl shadow-blue-500/5 group"
+            >
+              <div className="xl:w-1/4 w-full flex-center">
+                <div className="relative group w-full h-24 sm:h-32 md:h-40 flex-center rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl overflow-hidden shadow-[0_0_40px_rgba(0,198,255,0.1)] hover:shadow-[0_0_60px_rgba(0,198,255,0.2)] transition-all duration-500">
+                  <img 
+                    src={card.imgPath} 
+                    alt="exp-logo" 
+                    className="max-w-[70%] max-h-[70%] object-contain group-hover:scale-110 transition-transform duration-700 filter drop-shadow-[0_0_15px_rgba(255,255,255,0.3)] p-2" 
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-tr from-neon-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                 </div>
-                <div className="xl:w-4/6">
-                  <div className="flex items-start">
-                    <div className="timeline-wrapper">
-                      <div className="timeline" />
-                      <div className="gradient-line w-1 h-full" />
-                    </div>
-                    <div className="expText flex xl:gap-20 md:gap-10 gap-5 relative z-20">
-                      <div className="timeline-logo">
-                        <img src={card.logoPath} alt="logo" />
-                      </div>
-                      <div>
-                        <h1 className="font-semibold text-3xl">{card.title}</h1>
-                        <p className="my-5 text-white-50">
-                          🗓️&nbsp;{card.date}
-                        </p>
-                        <p className="text-[#839CB5] italic">
-                          Responsibilities
-                        </p>
-                        <ul className="list-disc ms-5 mt-5 flex flex-col gap-5 text-white-50">
-                          {card.responsibilities.map(
-                            (responsibility, index) => (
-                              <li key={index} className="text-lg">
-                                {responsibility}
-                              </li>
-                            )
-                          )}
-                        </ul>
-                      </div>
-                    </div>
+              </div>
+              <div className="xl:w-3/4 w-full">
+                <div className="flex flex-col gap-4">
+                  <div className="flex flex-col gap-1">
+                    <h3 className="text-xl md:text-2xl lg:text-3xl font-black text-white-50 tracking-tight">{card.title}</h3>
+                    <p className="text-neon-blue font-bold tracking-widest uppercase text-xs md:text-sm">{card.date}</p>
+                  </div>
+                  
+                  <div className="bg-white/30 rounded-xl p-4 md:p-5 border border-black-50 shadow-inner">
+                    <p className="text-blue-50 italic mb-3 leading-relaxed text-sm md:text-base">"{card.review}"</p>
+                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-2.5">
+                      {card.responsibilities.map((responsibility, i) => (
+                        <li key={i} className="flex gap-2 items-start text-blue-50">
+                          <span className="text-neon-blue mt-1 flex-shrink-0 text-[10px]">▹</span>
+                          <span className="text-sm md:text-base leading-snug">{responsibility}</span>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 </div>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

@@ -1,142 +1,73 @@
 <div align="center">
   <br />
-    <a href="https://www.youtube.com/watch?v=E-fdPfRxkzQ" target="_blank">
-      <img src="public/images/readme.png" alt="Project Banner">
-    </a>
+  <h1 align="center">Pavan Kumar - Software Engineer Portfolio</h1>
   <br />
 
   <div>
-    <img src="https://img.shields.io/badge/-Three.js-black?style=for-the-badge&logo=three.js&logoColor=white" />
-    <img src="https://img.shields.io/badge/-GSAP-88CE02?style=for-the-badge&logo=greensock&logoColor=white" />
-    <img src="https://img.shields.io/badge/-Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
+    <img src="https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
+    <img src="https://img.shields.io/badge/-Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Django-092E20?style=for-the-badge&logo=django&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" />
+    <img src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
   </div>
 
-  <h3 align="center">Interactive 3D Portfolio Website</h3>
-
-   <div align="center">
-     Build this project step by step with our detailed tutorial on <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a> YouTube. Join the JSM family!
-    </div>
+  <h3 align="center">Interactive 3D Engineering Portfolio</h3>
 </div>
 
-## 📋 <a name="table">Table of Contents</a>
+## 🤖 Introduction
 
-1. 🤖 [Introduction](#introduction)
-2. ⚙️ [Tech Stack](#tech-stack)
-3. 🔋 [Features](#features)
-4. 🤸 [Quick Start](#quick-start)
-5. 🔗 [Assets & Snippets](#links)
-6. 🚀 [More](#more)
+Welcome to my personal 3D interactive portfolio. I am **Pavan Kumar**, a Software Engineer based in Bangalore, India. Currently, I work at Mindmesh Solutions Private Limited, specializing in end-to-end full-stack web and cross-platform mobile application development.
 
-## ⚠️ Tutorial
+This portfolio serves as a highly engaging showcase of my engineering skills, integrating responsive design with immersive 3D web experiences to capture the scope and depth of my professional work.
 
-This repository contains the code corresponding to an in-depth tutorial available on our YouTube channel, <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a>.
+## 💼 Work Experience
 
-If you prefer visual learning, this is the perfect resource for you. Follow our tutorial to learn how to build projects like these step-by-step in a beginner-friendly manner!
+- **Software Engineer**, *Mindmesh Solutions Private Limited*, Bangalore (Oct 2024 – Present)
+- **Customer Support Executive**, *iEnergizer* (Oct 2023 – Sep 2024)
 
-<a href="https://www.youtube.com/watch?v=E-fdPfRxkzQ" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/1736fca5-a031-4854-8c09-bc110e3bc16d" /></a>
+## 🚀 Key Projects
 
-## <a name="introduction">🤖 Introduction</a>
+- **RoadRobos Ecosystem**: A production-ready cross-platform mobile application (Android/iOS via Flutter) and robust Web platform designed to streamline vehicle rentals.
+- **Online Medicare System**: A specialized Django healthcare CRM enabling streamlined appointment scheduling and patient tracking.
+- **Decentralized Voting System**: An immutable smart-contract integration demonstrating practical blockchain utility for trustless environments.
+- **Payment Gateway Integrations**: Specialized deployment of robust, compliant transactional pipelines (e.g. Razorpay).
+- **Interactive Weather App**: A real-time data aggregation service demonstrating highly responsive API integrations.
+- **Personal 3D Portfolio**: This very website, featuring React, Tailwind, GSAP, and Three.js.
 
-The 3D Portfolio project is a highly engaging personal website that features animated 3D scenes, smooth camera transitions, interactive model showcases, and responsive design. It’s ideal for developers, designers, or freelancers looking to stand out in the digital crowd.
+## ⚙️ Core Technical Stack
 
-If you're getting started and need assistance or face any bugs, join our active Discord community with over **50k+** members. It's a place where people help each other out.
+- **Languages:** Python, JavaScript, HTML, CSS
+- **Frameworks/Libraries:** Django, ReactJS, Flutter, Tailwind CSS, Three.js
+- **Databases & Tools:** SQLite, PostgreSQL, Git, Supabase, GSAP
 
-<a href="https://discord.com/invite/n6EdbFJ" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/618f4872-1e10-42da-8213-1d69e486d02e" /></a>
+## 🤸 Local Environment Setup
 
-## <a name="tech-stack">⚙️ Tech Stack</a>
+To run this portfolio locally on your machine:
 
-- Three.js
-- React Three Fiber
-- Drei
-- GSAP
-- Tailwind CSS
-- Vite
-- React 19
-
-## <a name="features">🔋 Features</a>
-
-### Features of the 3D Portfolio Project
-
-👉 Animated 3D models and reveal animations
-
-👉 Realistic lighting and shadows
-
-👉 GSAP-powered scroll interactions
-
-👉 Responsive design with Tailwind CSS and Flexbox/Grid
-
-👉 Micro Interactions
-
-👉 Multi-section layout (About, Projects, Contact)
-
-👉 Mobile optimized 3D experience
-
-and many more, including code architecture and reusability.
-
-## <a name="quick-start">🤸 Quick Start</a>
-
-Follow these steps to set up the project locally on your machine.
-
-**Prerequisites**
-
-Make sure you have the following installed on your machine:
-
-- [Git](https://git-scm.com/)
-- [Node.js](https://nodejs.org/en)
-- [npm](https://www.npmjs.com/) (Node Package Manager)
-
-**Cloning the Repository**
-
+**1. Clone the Repository**
 ```bash
-git clone https://github.com/adrianhajdin/3d-portfolio.git
-cd 3d-portfolio
+git clone https://github.com/Pavankumar0604/[your-repo-name].git
+cd [your-repo-name]
 ```
 
-**Installation**
-
-Install the project dependencies using npm:
-
+**2. Install Dependencies**
 ```bash
 npm install
 ```
 
-**Set Up Environment Variables**
-
-Create a new file named `.env` in the root of your project and add the following content:
-
+**3. Configure Environment Variables**
+Create a `.env` file in the root directory for contact form capabilities:
 ```env
-VITE_APP_EMAILJS_SERVICE_ID=
-VITE_APP_EMAILJS_TEMPLATE_ID=
-VITE_APP_EMAILJS_PUBLIC_KEY=
+VITE_WEB3FORMS_ACCESS_KEY=your_key_here
 ```
 
-Replace the placeholder values with your actual **[EmailJS](https://www.emailjs.com/)** credentials.
-
-**Running the Project**
-
+**4. Start the Application**
 ```bash
 npm run dev
 ```
 
-Open [http://localhost:5173](http://localhost:5173/) in your browser to view the project.
+Visit `http://localhost:5173` in your browser.
 
+---
 
-## <a name="links">🔗 Assets and Snippets</a>
-
-Assets and snippets used in the project can be found in the **[video kit](https://jsm.dev/pfolio25-kit)**.
-
-<a href="https://jsm.dev/pfolio25-kit" target="_blank">
-  <img src="public/images/readme-video-kit.png" alt="Video Kit Banner">
-</a>
-
-
-## <a name="more">🚀 More</a>
-
-**Advance your skills with JSM Pro Courses**
-
-Enjoyed creating this project? Dive deeper into our PRO courses for a richer learning adventure. They're packed with
-detailed explanations, cool features, and exercises to boost your skills. Give it a go!
-
-<a href="https://beta.jsmastery.pro/" target="_blank">
-  <img src="public/images/readme-bottom.png" alt="Project Banner">
-</a>
+*Designed and engineered by Pavan Kumar.*

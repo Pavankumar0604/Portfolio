@@ -1,7 +1,9 @@
 {
-  "name": "three-d-portfolio-2025",
+  "name": "pavan-kumar-portfolio",
+  "author": "Pavan Kumar",
+  "description": "Personal Portfolio of Pavan Kumar, Software Engineer",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",

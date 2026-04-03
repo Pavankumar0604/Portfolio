@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 
+import Logo from "./Logo";
 import { navLinks } from "../constants";
 
 const NavBar = () => {
@@ -25,8 +26,8 @@ const NavBar = () => {
   return (
     <header className={`navbar ${scrolled ? "scrolled" : "not-scrolled"}`}>
       <div className="inner">
-        <a href="#hero" className="logo">
-          Adrian JSM
+        <a href="#hero">
+          <Logo />
         </a>
 
         <nav className="desktop">

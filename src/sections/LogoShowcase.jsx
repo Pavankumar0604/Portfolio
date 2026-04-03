@@ -2,8 +2,8 @@ import { logoIconsList } from "../constants";
 
 const LogoIcon = ({ icon }) => {
   return (
-    <div className="flex-none flex-center marquee-item">
-      <img src={icon.imgPath} alt={icon.name} />
+    <div className="flex-none flex-center marquee-item grayscale hover:grayscale-0 transition-all duration-300 hover:scale-110 cursor-pointer p-4">
+      <img src={icon.imgPath} alt={icon.name} className="h-12 w-auto object-contain" />
     </div>
   );
 };
