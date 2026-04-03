@@ -3,6 +3,7 @@
  * When clicked, it scrolls smoothly to the section with ID "counter",
  * with a small offset from the top for better visual placement.
  */
+import { getAssetPath } from "../utils/assets";
 
 const Button = ({ text, className, id }) => {
   return (
@@ -31,7 +32,7 @@ const Button = ({ text, className, id }) => {
         <div className="bg-circle" />
         <p className="text">{text}</p>
         <div className="arrow-wrapper">
-          <img src="/images/arrow-down.svg" alt="arrow" />
+          <img src={getAssetPath("/images/arrow-down.svg")} alt="arrow" />
         </div>
       </div>
     </a>
