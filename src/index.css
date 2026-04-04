@@ -76,6 +76,11 @@ section {
     text-shadow: 0 0 10px rgba(217, 119, 6, 0.2);
   }
 
+  .text-gradient-amber {
+    @apply bg-gradient-to-r from-amber-600 via-orange-500 to-amber-700 bg-clip-text text-transparent;
+    filter: drop-shadow(0 0 10px rgba(217, 119, 6, 0.25));
+  }
+
   .neon-text-green {
     color: var(--neon-green);
     text-shadow: 0 0 10px rgba(77, 124, 15, 0.2);
