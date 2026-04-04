@@ -1,4 +1,38 @@
-import { getAssetPath } from "../utils/assets";
+import codeImg from "../assets/images/code.svg";
+import ideasImg from "../assets/images/ideas.svg";
+import designsImg from "../assets/images/designs.svg";
+import conceptsImg from "../assets/images/concepts.svg";
+import logoImg from "../assets/images/logos/logo.png";
+import ienergizerImg from "../assets/images/ienergizer.png";
+import reactImg from "../assets/images/logos/react.png";
+import pythonImg from "../assets/images/logos/python.svg";
+import gitImg from "../assets/images/logos/git.svg";
+import nodeImg from "../assets/images/logos/node.png";
+import threeImg from "../assets/images/logos/three.png";
+import javascriptImg from "../assets/images/logos/javascript.png";
+import tailwindImg from "../assets/images/logos/tailwindcss.png";
+import flutterImg from "../assets/images/logos/flutter.png";
+import supabaseImg from "../assets/images/logos/supabase.png";
+import sqlImg from "../assets/images/logos/sql.png";
+import figmaImg from "../assets/images/logos/figma.png";
+import vscodeImg from "../assets/images/logos/vscode.png";
+import htmlImg from "../assets/images/logos/html.png";
+import cssImg from "../assets/images/logos/css.png";
+import personImg from "../assets/images/person.png";
+import linkedinIcon from "../assets/images/linkedin.png";
+import roadrobosWebImg from "../assets/images/projects/roadrobos_web.png";
+import project1Img from "../assets/images/project1.png";
+import projectImg1 from "../assets/images/projects/image1.jpg";
+import projectImg2 from "../assets/images/projects/image2.jpg";
+import projectImg3 from "../assets/images/projects/image3.jpg";
+import projectImg4 from "../assets/images/projects/image4.png";
+
+// Models
+import reactModel from "../assets/models/react_logo-transformed.glb";
+import nodeModel from "../assets/models/node-transformed.glb";
+import pythonModel from "../assets/models/python-transformed.glb";
+import threeModel from "../assets/models/three.js-transformed.glb";
+import gitModel from "../assets/models/git-svg-transformed.glb";
 
 const navLinks = [
   {
@@ -20,14 +54,14 @@ const navLinks = [
 ];
 
 const words = [
-  { text: "Software Engineer", imgPath: getAssetPath("/images/code.svg") },
-  { text: "Product-Driven", imgPath: getAssetPath("/images/ideas.svg") },
-  { text: "Web & Mobile", imgPath: getAssetPath("/images/designs.svg") },
-  { text: "Cross-Platform", imgPath: getAssetPath("/images/concepts.svg") },
-  { text: "Mobility Tech", imgPath: getAssetPath("/images/designs.svg") },
-  { text: "Python & Django", imgPath: getAssetPath("/images/code.svg") },
-  { text: "Flutter & React", imgPath: getAssetPath("/images/code.svg") },
-  { text: "Full-Stack Setup", imgPath: getAssetPath("/images/ideas.svg") },
+  { text: "Software Engineer", imgPath: codeImg },
+  { text: "Product-Driven", imgPath: ideasImg },
+  { text: "Web & Mobile", imgPath: designsImg },
+  { text: "Cross-Platform", imgPath: conceptsImg },
+  { text: "Mobility Tech", imgPath: designsImg },
+  { text: "Python & Django", imgPath: codeImg },
+  { text: "Flutter & React", imgPath: codeImg },
+  { text: "Full-Stack Setup", imgPath: ideasImg },
 ];
 
 const counterItems = [
@@ -38,78 +72,78 @@ const counterItems = [
 ];
 
 const logoIconsList = [
-  { imgPath: getAssetPath("/images/logos/logo.png"), name: "Mindmesh" },
-  { imgPath: getAssetPath("/images/ienergizer.png"), name: "IEnergizer" },
-  { imgPath: getAssetPath("/images/logos/react.png"), name: "React" },
-  { imgPath: getAssetPath("/images/logos/python.svg"), name: "Python" },
-  { imgPath: getAssetPath("/images/logos/git.svg"), name: "Git" },
-  { imgPath: getAssetPath("/images/logos/node.png"), name: "Node.js" },
-  { imgPath: getAssetPath("/images/logos/three.png"), name: "Three.js" },
+  { imgPath: logoImg, name: "Mindmesh" },
+  { imgPath: ienergizerImg, name: "IEnergizer" },
+  { imgPath: reactImg, name: "React" },
+  { imgPath: pythonImg, name: "Python" },
+  { imgPath: gitImg, name: "Git" },
+  { imgPath: nodeImg, name: "Node.js" },
+  { imgPath: threeImg, name: "Three.js" },
 ];
 
 const abilities = [
   {
-    imgPath: getAssetPath("/images/concepts.svg"),
+    imgPath: conceptsImg,
     title: "End-to-End Development",
     desc: "Architecting and deploying production-ready ecosystems for web and mobile.",
   },
   {
-    imgPath: getAssetPath("/images/code.svg"),
+    imgPath: codeImg,
     title: "Cross-Platform Mastery",
     desc: "Building unified Android/iOS experiences with high-performance frameworks.",
   },
   {
-    imgPath: getAssetPath("/images/designs.svg"),
+    imgPath: designsImg,
     title: "UI/UX & Client Strategy",
     desc: "Focusing on intuitive designs that scale gracefully with business growth.",
   },
 ];
 
 const techStackImgs = [
-  { name: "ReactJS", imgPath: getAssetPath("/images/logos/react.png") },
-  { name: "Node.js", imgPath: getAssetPath("/images/logos/node.png") },
-  { name: "Python", imgPath: getAssetPath("/images/logos/python.svg") },
-  { name: "Git", imgPath: getAssetPath("/images/logos/git.svg") },
-  { name: "Three.js", imgPath: getAssetPath("/images/logos/three.png") },
-  { name: "JavaScript", imgPath: getAssetPath("/images/logos/javascript.png") },
-  { name: "TailwindCSS", imgPath: getAssetPath("/images/logos/tailwindcss.png") },
-  { name: "Flutter", imgPath: getAssetPath("/images/logos/flutter.png") },
-  { name: "Supabase", imgPath: getAssetPath("/images/logos/supabase.png") },
-  { name: "PostgreSQL", imgPath: getAssetPath("/images/logos/sql.png") },
-  { name: "Figma", imgPath: getAssetPath("/images/logos/figma.png") },
-  { name: "VS Code", imgPath: getAssetPath("/images/logos/vscode.png") },
-  { name: "HTML", imgPath: getAssetPath("/images/logos/html.png") },
-  { name: "CSS", imgPath: getAssetPath("/images/logos/css.png") },
+  { name: "ReactJS", imgPath: reactImg },
+  { name: "Node.js", imgPath: nodeImg },
+  { name: "Python", imgPath: pythonImg },
+  { name: "Git", imgPath: gitImg },
+  { name: "Three.js", imgPath: threeImg },
+  { name: "JavaScript", imgPath: javascriptImg },
+  { name: "TailwindCSS", imgPath: tailwindImg },
+  { name: "Flutter", imgPath: flutterImg },
+  { name: "Supabase", imgPath: supabaseImg },
+  { name: "PostgreSQL", imgPath: sqlImg },
+  { name: "Figma", imgPath: figmaImg },
+  { name: "VS Code", imgPath: vscodeImg },
+  { name: "HTML", imgPath: htmlImg },
+  { name: "CSS", imgPath: cssImg },
 ];
 
 const techStackIcons = [
   {
     name: "ReactJS",
-    modelPath: getAssetPath("/models/react_logo-transformed.glb"),
+    modelPath: reactModel,
     scale: 0.5,
     rotation: [0, 0, 0],
   },
   {
     name: "Node.js",
-    modelPath: getAssetPath("/models/node-transformed.glb"),
+    modelPath: nodeModel,
     scale: 3,
     rotation: [0, -Math.PI / 2, 0],
   },
   {
     name: "Python",
-    modelPath: getAssetPath("/models/python-transformed.glb"),
+    modelPath: pythonModel,
     scale: 0.8,
     rotation: [0, 0, 0],
   },
   {
     name: "Three.js",
-    modelPath: getAssetPath("/models/three.js-transformed.glb"),
+    modelPath: threeModel,
     scale: 0.05,
     rotation: [0, 0, 0],
   },
   {
     name: "Git",
-    modelPath: getAssetPath("/models/git-svg-transformed.glb"),
+    modelPath: gitModel,
     scale: 0.05,
     rotation: [0, -Math.PI / 4, 0],
   },
@@ -118,8 +152,8 @@ const techStackIcons = [
 const expCards = [
   {
     review: "Driving end-to-end development of production-scale mobility ecosystems and engineering robust backend systems.",
-    imgPath: getAssetPath("/images/logos/logo.png"),
-    logoPath: getAssetPath("/images/logos/logo.png"),
+    imgPath: logoImg,
+    logoPath: logoImg,
     title: "Software Engineer",
     date: "Oct 2024 - Present",
     responsibilities: [
@@ -132,8 +166,8 @@ const expCards = [
   },
   {
     review: "Provided rigorous customer support, ensuring 100% resolution accuracy while adapting to high-volume user needs.",
-    imgPath: getAssetPath("/images/ienergizer.png"),
-    logoPath: getAssetPath("/images/ienergizer.png"),
+    imgPath: ienergizerImg,
+    logoPath: ienergizerImg,
     title: "Customer Support Executive",
     date: "Oct 2023 - Sep 2024",
     responsibilities: [
@@ -149,11 +183,11 @@ const expCards = [
 const expLogos = [
   {
     name: "Mindmesh",
-    imgPath: getAssetPath("/images/logos/logo.png"),
+    imgPath: logoImg,
   },
   {
     name: "IEnergizer",
-    imgPath: getAssetPath("/images/ienergizer.png"),
+    imgPath: ienergizerImg,
   },
 ];
 
@@ -163,19 +197,19 @@ const testimonials = [
     mentions: "@pavankumar0604",
     review:
       "Software Engineer building production-grade products. Expert in translating complex mobility requirements into seamless digital experiences.",
-    imgPath: getAssetPath("/images/person.png"),
+    imgPath: personImg,
   },
 ];
 
 const socialImgs = [
   {
     name: "github",
-    imgPath: getAssetPath("/images/github.png"),
+    imgPath: gitImg,
     link: "https://github.com/Pavankumar0604",
   },
   {
     name: "linkedin",
-    imgPath: getAssetPath("/images/linkedin.png"),
+    imgPath: linkedinIcon,
     link: "https://www.linkedin.com/in/penumuru-pavan-kumar-bb1b00147/",
   },
 ];
@@ -193,7 +227,7 @@ const projects = [
     techStack: ["React", "Python", "Django", "Tailwind CSS"],
     repoLink: "https://github.com/Pavankumar0604",
     liveLink: "https://roadrobos.com",
-    imgPath: getAssetPath("/images/projects/roadrobos_web.png"),
+    imgPath: roadrobosWebImg,
     featured: true
   },
   {
@@ -208,7 +242,7 @@ const projects = [
     techStack: ["Flutter", "Dart", "REST APIs", "Firebase"],
     repoLink: "https://github.com/Pavankumar0604",
     liveLink: "#",
-    imgPath: getAssetPath("/images/project1.png"),
+    imgPath: project1Img,
     featured: true
   },
   {
@@ -223,7 +257,7 @@ const projects = [
     techStack: ["Python", "Django", "JavaScript", "REST APIs"],
     repoLink: "https://github.com/Pavankumar0604",
     liveLink: "#",
-    imgPath: getAssetPath("/images/projects/image1.jpg"),
+    imgPath: projectImg1,
     featured: true
   },
   {
@@ -238,7 +272,7 @@ const projects = [
     techStack: ["Django", "Python", "SQLite", "Bootstrap"],
     repoLink: "https://github.com/Pavankumar0604",
     liveLink: "#",
-    imgPath: getAssetPath("/images/projects/image3.jpg"),
+    imgPath: projectImg3,
     featured: false
   },
   {
@@ -253,7 +287,7 @@ const projects = [
     techStack: ["Python", "Django", "JavaScript", "Responsive UI"],
     repoLink: "https://github.com/Pavankumar0604",
     liveLink: "#",
-    imgPath: getAssetPath("/images/projects/image2.jpg"),
+    imgPath: projectImg2,
     featured: false
   },
   {
@@ -268,7 +302,7 @@ const projects = [
     techStack: ["ReactJS", "Tailwind CSS", "Three.js", "GSAP"],
     repoLink: "https://github.com/Pavankumar0604",
     liveLink: "#",
-    imgPath: getAssetPath("/images/projects/image4.png"),
+    imgPath: projectImg4,
     featured: false
   }
 ];

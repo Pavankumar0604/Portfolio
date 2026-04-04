@@ -5,7 +5,7 @@ import AnimatedCounter from "../components/AnimatedCounter";
 import Button from "../components/Button";
 import { words } from "../constants";
 import HeroExperience from "../components/models/hero_models/HeroExperience";
-import { getAssetPath } from "../utils/assets";
+import bgImg from "../assets/images/bg.png";
 
 const Hero = () => {
   useGSAP(() => {
@@ -19,7 +19,7 @@ const Hero = () => {
   return (
     <section id="hero" className="relative overflow-hidden">
       <div className="absolute top-0 left-0 z-10">
-        <img src={getAssetPath("/images/bg.png")} alt="" className="w-screen h-screen object-cover" />
+        <img src={bgImg} alt="" className="w-screen h-screen object-cover" />
       </div>
 
       <div className="hero-layout">
@@ -29,7 +29,7 @@ const Hero = () => {
             <div className="hero-text text-white-50">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                 Hi, I'm <br />
-                <span className="text-neon-blue">Pavan Kumar</span>
+                <span className="neon-text-blue">Pavan Kumar</span>
               </h1>
               <div className="mt-4 text-stone-600 font-medium">
                 <p className="text-sm sm:text-base md:text-lg text-blue-50/90 leading-snug">

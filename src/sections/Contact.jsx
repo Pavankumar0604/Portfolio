@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 
 import TitleHeader from "../components/TitleHeader";
 import ContactExperience from "../components/models/contact/ContactExperience";
-import { getAssetPath } from "../utils/assets";
+import arrowDownImg from "../assets/images/arrow-down.svg";
 
 const Contact = () => {
   const formRef = useRef(null);
@@ -114,7 +114,7 @@ const Contact = () => {
                       {loading ? "Sending..." : "Send Message"}
                     </p>
                     <div className="arrow-wrapper">
-                      <img src={getAssetPath("/images/arrow-down.svg")} alt="arrow" />
+                      <img src={arrowDownImg} alt="arrow" />
                     </div>
                   </div>
                 </button>

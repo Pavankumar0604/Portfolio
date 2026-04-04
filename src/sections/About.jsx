@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { getAssetPath } from "../utils/assets";
+import aboutImg from "../assets/images/projects/about.jpg";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
@@ -64,7 +64,7 @@ const About = () => {
 
               <div className="relative w-48 sm:w-64 md:w-80 rounded-2xl overflow-hidden shadow-xl border border-amber-200/10">
                 <img
-                  src={getAssetPath("/images/projects/about.jpg")}
+                  src={aboutImg}
                   alt="Penumuru Pavan Kumar"
                   className="w-full h-auto block"
                 />
