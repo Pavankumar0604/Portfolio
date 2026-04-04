@@ -77,7 +77,10 @@ section {
   }
 
   .text-gradient-amber {
-    @apply bg-gradient-to-r from-amber-600 via-orange-500 to-amber-700 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-amber-600 via-orange-500 to-amber-700;
+    color: transparent !important;
+    background-clip: text;
+    -webkit-background-clip: text;
     filter: drop-shadow(0 0 10px rgba(217, 119, 6, 0.25));
   }
 
